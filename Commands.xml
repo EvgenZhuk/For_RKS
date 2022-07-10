@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<clientCommands>
+	<programCommand	code="0xAAA3" name="ВКЛ ПРИБОР"/>
+	<programCommand	code="0xBBB2" name="ОТКЛ ПРИБОР"/>
+	<programCommand	code="0xCCC1" name="ЗАПУСТИТЬ ТЕСТ"/>
+	<programCommand	code="0x88DD" name="ОСТАНОВИТЬ ТЕСТ"/>
+	<programCommand	code="0xFF55" name="ШТАТНЫЙ РЕЖИМ"/>
+</clientCommands>
