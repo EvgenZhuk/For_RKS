@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace For_RKS.Model : INotifyPropertyChanged
+
+namespace For_RKS.Model
 {
-    class Command
+    public class Command : INotifyPropertyChanged
     {
         private string name;
         private string code;
