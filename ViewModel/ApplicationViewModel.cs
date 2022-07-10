@@ -25,7 +25,18 @@ namespace For_RKS.ViewModel
             }
         }
 
-     
+        // данный конструктор как временное решение до реализации считывания XML
+        public ApplicationViewModel()
+        {
+            Commands = new ObservableCollection<Command>
+            {
+                new Command {Name="ВКЛ ПРИБОР", Code="0xAAA3"},
+                new Command {Name="ОТКЛ ПРИБОР", Code="0xBBB2"},
+                new Command {Name="ЗАПУСТИТЬ ТЕСТ", Code="0xCCC1"},
+                new Command {Name="ОСТАНОВИТЬ ТЕСТ", Code="0x88DD"},
+                new Command {Name="ШТАТНЫЙ РЕЖИМ", Code="0xFF55"}
+            };
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
